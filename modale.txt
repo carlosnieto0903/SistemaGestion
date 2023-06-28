@@ -1,0 +1,22 @@
+<div id="modal" class="modale" aria-hidden="true">
+            <div class="modal-dialog" >
+          
+              <div class="modal-header">
+                <h2>Datos del Cliente</h2>
+                <a onclick="cerrarModal()" href="#" class="btn-close closemodale" 
+                aria-hidden="true"></a>
+              </div>
+          
+              <div class="modal-body">
+                <input id="txtId" type="hidden" placeholder="ID" size="20" /><br />
+                <input id="txtFirstname" type="text" placeholder="Nombre" size="20" /><br />
+                <input id="txtLastname" type="text" placeholder="Apellido" size="20" /><br />
+                <input id="txtPhone" type="text" placeholder="Teléfono" size="20" /><br />
+                <input id="txtEmail" type="text" placeholder="Email" size="20" /><br />
+                <input id="txtAddress" type="text" placeholder="Dirección" size="20" /><br />
+              </div>
+              <div class="modal-footer">
+                <a onclick="save()" href="#" class="btn">Guardar</a>
+              </div>
+            </div>
+          </div>

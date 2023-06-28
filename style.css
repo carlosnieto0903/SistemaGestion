@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+  font-family:sans-serif;
+  color:#333;
+  text-align:center;
+}
+.modal-container{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height:100vh;
+    background-color: #00000055;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 2000;
+
+}
+
+.box{
+    color:#242424;
+    padding:40px;
+    height: 20%;
+    width:50px;
+    min-width: 300px;
+    background-color:#cecece ;
+    border: 2px solid #cecece;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 0px 10px #707070;
+
+}
+h3{
+    font-size: 2em;
+}
+#close{
+    background-color: #bebdbd;
+    position: absolute;
+    top:-10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #4b4a4a;
+    border-radius: 50%;
+    color:#0c0c0c;
+    cursor: pointer;
+}
+.button{
+    background-color: #707070;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    color:#f5f4f4;
+    border: 1px solid #707070;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.button:hover{
+    color:#cecece;
+    background-color: #242424;
+}
+.input{
+    font-size: 1.2em;
+    width: 90%;
+    height: 30px;
+    border: 1px solid #f8f6f6;
+    border-radius: 15px;
+}
+
+.modal-container.display{
+    display: flex;
+}
+
+@keyframes modal {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.display .box{
+    animation: modal .3s;
+}
+#active-modal{
+    font-size: 1.2em;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    color:#cecece;
+    background-color: #242424;
+}
+
+#made{
+    font-size: .7em;
+    margin-top: 80vh;
+    position: absolute;
+    color: #707070;
+}
+#made a{
+    text-decoration: none;
+    color: #707070;
+}
+#made a:hover{
+    color:#8B46E2;
+}
